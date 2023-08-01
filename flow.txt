@@ -1,0 +1,38 @@
+3 services
+
+1.hotel service
+hotel information creation and get
+its own DB1
+
+2.User service
+user information creation and get
+its own DB2
+
+3.Rating service
+rating information creation and get
+its own DB3
+
+
+user has given how much rating will get through calling rating service
+then when we  get user rating then which rating is for which hotel will get by calling hotel service
+
+user service needs rating service response and rating service needs hotel service response
+
+if configurations are repeating and same configurations used in all services then we will use config server 
+github storage
+
+client request will come through API gateway then it will further go to hotel service or User service or Rating service
+
+Authentication will be done through OKTA Auth
+
+service registry
+it  is also a microservice implimenting eureka server and connects all services to service registery
+all services will be registerd in service registry
+ service registry is kind of server or service where all services will be registerd 
+it helps track all information of services 
+
+it is used to store information of ip and port etc
+
+
+rating service working
+which user has given what rating to which hotel
